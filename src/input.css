@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+main {
+  @apply font-urbanist;
+}
+nav {
+  @apply max-w-[1440px] p-4 mx-auto text-white;
+}
+
+header {
+  @apply max-w-[1440px] p-4 mx-auto text-white;
+}
+
+.mw {
+  @apply max-w-[1440px] p-4 mx-auto text-white;
+}
