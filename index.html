@@ -12,9 +12,13 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
-    <main class="w-full mb-[700px]">
+    <main class="w-full">
       <div class="bg-primary pb-10">
         <nav class="flex justify-between items-center">
           <a href="/" class="flex items-center gap-3">
@@ -82,7 +86,7 @@
             <div>
               <img
                 src="assets/icon/video.svg"
-                class="bg-second p-4 rounded-full w-16"
+                class="bg-second p-4 rounded-full w-20"
                 alt=""
               />
             </div>
@@ -97,7 +101,7 @@
             <div>
               <img
                 src="assets/icon/check.svg"
-                class="bg-second p-4 rounded-full w-16"
+                class="bg-second p-4 rounded-full w-20"
                 alt=""
               />
             </div>
@@ -112,7 +116,7 @@
             <div>
               <img
                 src="assets/icon/time.svg"
-                class="bg-second p-4 rounded-full w-16"
+                class="bg-second p-4 rounded-full w-20"
                 alt=""
               />
             </div>
@@ -126,7 +130,26 @@
           </div>
         </div>
       </div>
+      <section id="slide" class="mw w-full">
+        <div class="swiper mySwiper text-black">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </section>
       <section id="course" class="mw mt-40">
+        <!-- Slider main container -->
+
         <div class="flex flex-col gap-3 max-w-[700px] mx-auto text-center">
           <h1 class="text-second text-xl font-semibold">Course Advice</h1>
           <h1 class="text-primary text-5xl font-semibold">
@@ -166,16 +189,6 @@
           <div
             class="mt-10 gap-8 w-full grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1"
           >
-            <!-- <div class="bg-white shadow-xl w-full h-[590px]">
-              <div class="w-full h-96">
-                <img
-                  src="assets/img/course/ui.jpg"
-                  height="200"
-                  class="object-contain rounded-t-2xl w-96 h-[200px] object-center"
-                  alt=""
-                />
-              </div>
-            </div> -->
             <div
               class="bg-white relative rounded-[20px] shadow-md w-full h-fit pb-4 m-2 overflow-hidden"
             >
@@ -215,8 +228,10 @@
                     <h1 class="font-semibold">250 sales</h1>
                   </div>
                 </div>
-                <button class="text-white w-fit bg-second p-4 rounded-xl">
-                  Join Courses
+                <button
+                  class="text-white font-bold w-fit bg-second p-4 rounded-xl"
+                >
+                  Join Course
                 </button>
               </div>
             </div>
@@ -226,23 +241,23 @@
               <img
                 alt="Image"
                 loading="lazy"
-                src="assets/img/course/ui.jpg"
+                src="assets/img/course/client.jpg"
                 decoding="async"
                 data-nimg="1"
                 class="w-full h-60 object-center mx-auto rounded-lg object-cover transition-transform duration-300 transform-gpu"
               />
               <div class="px-4 pt-10 flex flex-col gap-3">
                 <div class="flex justify-between">
-                  <h1 class="text-primary/60">UI/UX Design</h1>
+                  <h1 class="text-primary/60">Marketing</h1>
                   <div
                     class="bg-primary/10 flex items-center gap-3 p-1 font-semibold text-primary rounded-full"
                   >
                     <img src="assets/icon/star.svg" alt="" />
-                    <h1>4.9</h1>
+                    <h1>4.8</h1>
                   </div>
                 </div>
                 <h1 class="text-primary text-xl font-semibold">
-                  UI/UX for Beginners
+                  Successful Negotiation to Client
                 </h1>
                 <h1 class="text-[#27AE60] font-bold text-xl">$94</h1>
                 <div class="flex text-primary justify-between">
@@ -252,15 +267,17 @@
                   </div>
                   <div class="flex gap-2 items-center">
                     <img src="assets/icon/video2.svg" class="w-4" alt="" />
-                    <h1 class="font-semibold">34 courses</h1>
+                    <h1 class="font-semibold">16 courses</h1>
                   </div>
                   <div class="flex gap-2 items-center">
                     <img src="assets/icon/time2.svg" class="w-4" alt="" />
-                    <h1 class="font-semibold">250 sales</h1>
+                    <h1 class="font-semibold">196 sales</h1>
                   </div>
                 </div>
-                <button class="text-white w-fit bg-second p-4 rounded-xl">
-                  Join Courses
+                <button
+                  class="text-primary font-bold w-fit bg-primary/5 p-4 rounded-xl"
+                >
+                  Join Course
                 </button>
               </div>
             </div>
@@ -270,25 +287,25 @@
               <img
                 alt="Image"
                 loading="lazy"
-                src="assets/img/course/ui.jpg"
+                src="assets/img/course/work.jpg"
                 decoding="async"
                 data-nimg="1"
                 class="w-full h-60 object-center mx-auto rounded-lg object-cover transition-transform duration-300 transform-gpu"
               />
               <div class="px-4 pt-10 flex flex-col gap-3">
                 <div class="flex justify-between">
-                  <h1 class="text-primary/60">UI/UX Design</h1>
+                  <h1 class="text-primary/60">Marketing</h1>
                   <div
                     class="bg-primary/10 flex items-center gap-3 p-1 font-semibold text-primary rounded-full"
                   >
                     <img src="assets/icon/star.svg" alt="" />
-                    <h1>4.9</h1>
+                    <h1>4.7</h1>
                   </div>
                 </div>
                 <h1 class="text-primary text-xl font-semibold">
-                  UI/UX for Beginners
+                  Working time management
                 </h1>
-                <h1 class="text-[#27AE60] font-bold text-xl">$94</h1>
+                <h1 class="text-[#27AE60] font-bold text-xl">$85</h1>
                 <div class="flex text-primary justify-between">
                   <div class="flex gap-2 items-center">
                     <img src="assets/icon/time2.svg" class="w-4" alt="" />
@@ -300,11 +317,13 @@
                   </div>
                   <div class="flex gap-2 items-center">
                     <img src="assets/icon/time2.svg" class="w-4" alt="" />
-                    <h1 class="font-semibold">250 sales</h1>
+                    <h1 class="font-semibold">102 sales</h1>
                   </div>
                 </div>
-                <button class="text-white w-fit bg-second p-4 rounded-xl">
-                  Join Courses
+                <button
+                  class="text-primary font-bold w-fit bg-primary/5 p-4 rounded-xl"
+                >
+                  Join Course
                 </button>
               </div>
             </div>
@@ -314,41 +333,43 @@
               <img
                 alt="Image"
                 loading="lazy"
-                src="assets/img/course/ui.jpg"
+                src="assets/img/course/tech.jpg"
                 decoding="async"
                 data-nimg="1"
                 class="w-full h-60 object-center mx-auto rounded-lg object-cover transition-transform duration-300 transform-gpu"
               />
               <div class="px-4 pt-10 flex flex-col gap-3">
                 <div class="flex justify-between">
-                  <h1 class="text-primary/60">UI/UX Design</h1>
+                  <h1 class="text-primary/60">Mobile Development</h1>
                   <div
                     class="bg-primary/10 flex items-center gap-3 p-1 font-semibold text-primary rounded-full"
                   >
                     <img src="assets/icon/star.svg" alt="" />
-                    <h1>4.9</h1>
+                    <h1>4.7</h1>
                   </div>
                 </div>
                 <h1 class="text-primary text-xl font-semibold">
-                  UI/UX for Beginners
+                  Get Started using Native
                 </h1>
-                <h1 class="text-[#27AE60] font-bold text-xl">$94</h1>
+                <h1 class="text-[#27AE60] font-bold text-xl">$56</h1>
                 <div class="flex text-primary justify-between">
                   <div class="flex gap-2 items-center">
                     <img src="assets/icon/time2.svg" class="w-4" alt="" />
-                    <h1 class="font-semibold">22hr 30min</h1>
+                    <h1 class="font-semibold">19hr 30min</h1>
                   </div>
                   <div class="flex gap-2 items-center">
                     <img src="assets/icon/video2.svg" class="w-4" alt="" />
-                    <h1 class="font-semibold">34 courses</h1>
+                    <h1 class="font-semibold">29 courses</h1>
                   </div>
                   <div class="flex gap-2 items-center">
                     <img src="assets/icon/time2.svg" class="w-4" alt="" />
-                    <h1 class="font-semibold">250 sales</h1>
+                    <h1 class="font-semibold">102 sales</h1>
                   </div>
                 </div>
-                <button class="text-white w-fit bg-second p-4 rounded-xl">
-                  Join Courses
+                <button
+                  class="text-primary font-bold w-fit bg-primary/5 p-4 rounded-xl"
+                >
+                  Join Course
                 </button>
               </div>
             </div>
@@ -358,7 +379,7 @@
               <img
                 alt="Image"
                 loading="lazy"
-                src="assets/img/course/ui.jpg"
+                src="assets/img/course/ux.jpg"
                 decoding="async"
                 data-nimg="1"
                 class="w-full h-60 object-center mx-auto rounded-lg object-cover transition-transform duration-300 transform-gpu"
@@ -370,13 +391,13 @@
                     class="bg-primary/10 flex items-center gap-3 p-1 font-semibold text-primary rounded-full"
                   >
                     <img src="assets/icon/star.svg" alt="" />
-                    <h1>4.9</h1>
+                    <h1>4.8</h1>
                   </div>
                 </div>
                 <h1 class="text-primary text-xl font-semibold">
-                  UI/UX for Beginners
+                  Introduction to User Experience Design
                 </h1>
-                <h1 class="text-[#27AE60] font-bold text-xl">$94</h1>
+                <h1 class="text-[#27AE60] font-bold text-xl">$80</h1>
                 <div class="flex text-primary justify-between">
                   <div class="flex gap-2 items-center">
                     <img src="assets/icon/time2.svg" class="w-4" alt="" />
@@ -388,11 +409,13 @@
                   </div>
                   <div class="flex gap-2 items-center">
                     <img src="assets/icon/time2.svg" class="w-4" alt="" />
-                    <h1 class="font-semibold">250 sales</h1>
+                    <h1 class="font-semibold">102 sales</h1>
                   </div>
                 </div>
-                <button class="text-white w-fit bg-second p-4 rounded-xl">
-                  Join Courses
+                <button
+                  class="text-primary font-bold w-fit bg-primary/5 p-4 rounded-xl"
+                >
+                  Join Course
                 </button>
               </div>
             </div>
@@ -402,41 +425,43 @@
               <img
                 alt="Image"
                 loading="lazy"
-                src="assets/img/course/ui.jpg"
+                src="assets/img/course/web.jpg"
                 decoding="async"
                 data-nimg="1"
                 class="w-full h-60 object-center mx-auto rounded-lg object-cover transition-transform duration-300 transform-gpu"
               />
               <div class="px-4 pt-10 flex flex-col gap-3">
                 <div class="flex justify-between">
-                  <h1 class="text-primary/60">UI/UX Design</h1>
+                  <h1 class="text-primary/60">Web Development</h1>
                   <div
                     class="bg-primary/10 flex items-center gap-3 p-1 font-semibold text-primary rounded-full"
                   >
                     <img src="assets/icon/star.svg" alt="" />
-                    <h1>4.9</h1>
+                    <h1>4.7</h1>
                   </div>
                 </div>
                 <h1 class="text-primary text-xl font-semibold">
-                  UI/UX for Beginners
+                  Create Bussiness with Website
                 </h1>
-                <h1 class="text-[#27AE60] font-bold text-xl">$94</h1>
+                <h1 class="text-[#27AE60] font-bold text-xl">$120</h1>
                 <div class="flex text-primary justify-between">
                   <div class="flex gap-2 items-center">
                     <img src="assets/icon/time2.svg" class="w-4" alt="" />
-                    <h1 class="font-semibold">22hr 30min</h1>
+                    <h1 class="font-semibold">28hr 30min</h1>
                   </div>
                   <div class="flex gap-2 items-center">
                     <img src="assets/icon/video2.svg" class="w-4" alt="" />
-                    <h1 class="font-semibold">34 courses</h1>
+                    <h1 class="font-semibold">41 courses</h1>
                   </div>
                   <div class="flex gap-2 items-center">
                     <img src="assets/icon/time2.svg" class="w-4" alt="" />
-                    <h1 class="font-semibold">250 sales</h1>
+                    <h1 class="font-semibold">151 sales</h1>
                   </div>
                 </div>
-                <button class="text-white w-fit bg-second p-4 rounded-xl">
-                  Join Courses
+                <button
+                  class="text-primary font-bold w-fit bg-primary/5 p-4 rounded-xl"
+                >
+                  Join Course
                 </button>
               </div>
             </div>
@@ -490,40 +515,40 @@
               </div>
               <div class="flex flex-row gap-4 items-center">
                 <img
-                  src="assets/img/membership/heart.svg"
+                  src="assets/img/membership/time3.svg"
                   class="bg-second p-[12px] w-14 rounded-full"
                   alt=""
                 />
                 <div class="flex flex-col gap-2">
-                  <h1 class="text-primary text-xl">Easily accessible</h1>
+                  <h1 class="text-primary text-xl">Flexible study time</h1>
                   <h1 class="text-primary/60 text-md">
-                    Learning will feel very comfortable with Courslab
+                    Study time can be adjusted to our busyness
                   </h1>
                 </div>
               </div>
               <div class="flex flex-row gap-4 items-center">
                 <img
-                  src="assets/img/membership/heart.svg"
+                  src="assets/img/membership/money.svg"
                   class="bg-second p-[12px] w-14 rounded-full"
                   alt=""
                 />
                 <div class="flex flex-col gap-2">
-                  <h1 class="text-primary text-xl">Easily accessible</h1>
+                  <h1 class="text-primary text-xl">More affordable cost</h1>
                   <h1 class="text-primary/60 text-md">
-                    Learning will feel very comfortable with Courslab
+                    Very affordable pricess can make you study anywhere
                   </h1>
                 </div>
               </div>
               <div class="flex flex-row gap-4 items-center">
                 <img
-                  src="assets/img/membership/heart.svg"
+                  src="assets/img/membership/sun.svg"
                   class="bg-second p-[12px] w-14 rounded-full"
                   alt=""
                 />
                 <div class="flex flex-col gap-2">
-                  <h1 class="text-primary text-xl">Easily accessible</h1>
+                  <h1 class="text-primary text-xl">Fun learning experience</h1>
                   <h1 class="text-primary/60 text-md">
-                    Learning will feel very comfortable with Courslab
+                    Very pleasent learning experience with remote
                   </h1>
                 </div>
               </div>
@@ -555,6 +580,147 @@
           <img src="assets/img/company/company.svg" alt="" />
         </div>
       </section>
+      <section id="testimonials" class="mt-40">
+        <div class="mw flex items-center gap-4">
+          <div class="flex flex-col gap-4 w-1/3">
+            <h1 class="font-semibold text-second">Testimonial</h1>
+            <h1 class="text-primary text-5xl">
+              Testimonial from Courslab member
+            </h1>
+            <img src="assets/img/membership/slate.svg " width="250" alt="" />
+            <h1 class="text-primary/60">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+              convallis rutrum risus. Nullam non lobortis nunc. Donec tortor
+              urna, accumsan a varius vel,
+            </h1>
+          </div>
+          <div class="w-1/3">
+            <div class="bg-[#FDBD4D] w-full h-[500px] rounded-2xl"></div>
+          </div>
+          <div class="w-1/3 -ml-24">
+            <div
+              class="bg-white p-10 gap-10 w-full h-60 border-[#006A7A] rounded-xl border-l-[20px] flex items-center"
+            >
+              <hr class="border-l-2 border-[#BDBDD1] h-full" />
+              <div class="flex flex-col justify-between gap-8">
+                <h1 class="text-primary font-semibold">
+                  "Thank you so much for your help. It's exactly what I've been
+                  looking for. You won't regret it. It really saves me time and
+                  effort. Skilline is exactly what our business has been
+                  lacking."
+                </h1>
+                <div class="flex flex-row items-center justify-between">
+                  <h1 class="text-primary text-2xl font-semibold">
+                    Lincoln Philips
+                  </h1>
+                  <div class="flex flex-row gap-1">
+                    <img
+                      src="assets/img/testimonials/star2.svg"
+                      width="25"
+                      alt=""
+                    />
+                    <img
+                      src="assets/img/testimonials/star2.svg"
+                      width="25"
+                      alt=""
+                    />
+                    <img
+                      src="assets/img/testimonials/star2.svg"
+                      width="25"
+                      alt=""
+                    />
+                    <img
+                      src="assets/img/testimonials/star2.svg"
+                      width="25"
+                      alt=""
+                    />
+                    <img
+                      src="assets/img/testimonials/star2.svg"
+                      width="25"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="subscribe" class="mt-40 mw">
+        <div class="bg-primary/10 relative z-10 w-full h-96 rounded-xl">
+          <div class="absolute flex justify-evenly">
+            <img src="assets/img/subscribe/1.svg" class="h-full" alt="" />
+            <img src="assets/img/subscribe/2.svg" class="h-full" alt="" />
+            <img src="assets/img/subscribe/3.svg" class="h-full" alt="" />
+            <img src="assets/img/subscribe/4.svg" class="h-full" alt="" />
+            <img src="assets/img/subscribe/5.svg" class="h-full" alt="" />
+          </div>
+          <div class="relative z-10 text-center">
+            <div class="p-20 flex flex-col gap-10">
+              <div class="flex flex-col gap-4">
+                <h1 class="text-primary text-5xl font-semibold">
+                  Subscribe For Get Update
+                </h1>
+                <h1 class="text-primary text-5xl font-semibold">
+                  Every New Course
+                </h1>
+              </div>
+              <form
+                action="#"
+                class="relative flex items-center justify-center"
+              >
+                <div class="flex items-center justify-end">
+                  <input
+                    type="email"
+                    name="email"
+                    class="text-primary focus:outline-second p-4 w-[600px] h-20 text-xl rounded-xl"
+                    placeholder="Add your email here"
+                  />
+
+                  <button
+                    class="bg-second absolute p-4 mr-4 rounded-xl font-semibold text-xl"
+                  >
+                    Subscribe
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="bg-primary w-full h-80 mt-20">
+        <div class="mw p-20 flex items-center justify-between">
+          <ul class="flex items-center pt-10 text-xl text-white gap-4 flex-row">
+            <li><a href="">About</a></li>
+            <li><a href="">Policy</a></li>
+            <li><a href="">Terms</a></li>
+          </ul>
+          <div class="flex p-10 flex-col gap-5 items-center">
+            <div
+              class="flex flex-row gap-3 items-center font-semibold text-2xl"
+            >
+              <img src="assets/img/footer/logo.svg" alt="" />
+              <h1>Courslab</h1>
+            </div>
+            <div>
+              <h1 class="text-white/40 text-lg w-80 text-center">
+                Be sure to take a look at our Terms of Use and Privacy Policy
+              </h1>
+            </div>
+          </div>
+          <div class="flex flex-row items-center gap-5">
+            <h1>Contact</h1>
+            <div class="flex flex-row gap-3">
+              <img src="assets/img/footer/fb.svg" alt="" />
+              <img src="assets/img/footer/tw.svg" alt="" />
+              <img src="assets/img/footer/google.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
   </body>
 </html>
