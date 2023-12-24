@@ -17,32 +17,110 @@ header {
   @apply max-w-[1440px] p-4 mx-auto text-white;
 }
 
-/* .swiper-button-next {
-  @apply bg-second text-white rounded-xl;
-}
-.swiper-button-next {
-  color: white;
-}
-.swiper-wrapper {
-  @apply absolute
-} */
+/* New */
 
-.swiper-button-next {
-  /* color: white !important;
-  background-color: #5faec4;
-  padding: 4px !important;
-  width: 40px !important;
-  height: 40px !important;
-  border-radius: 20px !important; */
+.swiper-btns {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  gap: 1rem;
+  padding: 1rem;
+  z-index: 9999;
+}
+
+.swiper-prev,
+.swiper-next {
   color: white !important;
   border-radius: 9999px !important;
-  background-color: #006a7a !important;
-  padding: 20px !important;
-  width: 20px !important;
-  height: 20px !important;
+  /* background-color: #006a7a !important; */
+  padding: 12px !important;
+  width: fit-content;
+  /* width: 40px !important; */
+  /* height: 40px !important; */
+}
+.swiper-prev {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  background-image: url("../assets/icon/slider/next.svg") !important;
+  background: no-repeat;
+}
+.swiper-next {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  background-image: url("../assets/icon/slider/prev.svg") !important;
+  background: no-repeat;
+}
+/* End New */
+
+/* Last */
+/* html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #ffffff;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 200px;
+  position: relative;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-prev {
+  color: white !important;
+  border-radius: 9999px !important;
+  background-color: #006a7a !important;
+  padding: 32px !important;
+  font-weight: 700;
+  width: 10px !important;
+  height: 10px !important;
+}
+.swiper-button-next {
+  border-radius: 20px !important;
+  color: white !important;
+  border-radius: 9999px !important;
+  background-color: #006a7a !important;
+  padding: 32px !important;
+  font-weight: 700;
+  width: 10px !important;
+  height: 10px !important;
+} */
+/* End Last */
+
+/* .swiper-button-next,
+.swiper-button-prev {
+ max-width: 2;
+} */
+
+/* .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
@@ -60,7 +138,7 @@ header {
 .swiper {
   width: 100%;
   height: 100%;
-}
+} */
 
 /* html,
 body {
